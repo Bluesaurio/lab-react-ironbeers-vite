@@ -17,7 +17,7 @@ function AllBeersPage() {
       const response = await axios.get(
         "https://ih-beers-api2.herokuapp.com/beers"
       );
-      console.log(response);
+      // console.log(response);
       setBeerList(response.data);
       setIsLoading(false);
     } catch (error) {
